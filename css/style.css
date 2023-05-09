@@ -1,0 +1,475 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fredericka+the+Great&display=swap%22");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+/* reset CSS */
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* main CSS */
+
+/* progressbar */
+
+.progressWrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: #2d9c9a;
+  z-index: 100;
+}
+
+.bar {
+  width: 0%;
+  height: inherit;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(255, 183, 0);
+  transition: width 0.4s ease-out;
+}
+
+/* menu */
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+nav ul {
+  font: 50px/1 "Do Hyeon";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+nav ul li a:hover {
+  color: #228af4;
+}
+
+nav ul li {
+  margin: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+.fullscreen span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* gallery */
+
+.bg4 {
+  background: #c5e4ff;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: change 0.5s;
+}
+
+.img-gallery {
+  width: 80%;
+  margin: 200px auto 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+.img-gallery img {
+  width: 100%;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.img-gallery img:hover {
+  transform: scale(0.8) rotate(-15deg);
+  border-radius: 20px;
+  box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+.full-img {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.full-img img {
+  width: 90%;
+  max-width: 500px;
+}
+
+.full-img span {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* body */
+
+.bg1 {
+  background: #000;
+  width: 100vw;
+  height: 100vh;
+  animation: change 0.5s;
+}
+
+.bg2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #403e43;
+  animation: change 0.5s;
+}
+
+.bg3 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #0d344d;
+  animation: change 0.5s;
+}
+
+.bg__signin {
+  width: 100vw;
+  height: 100vh;
+  background: #f5c79f;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: change 0.5s;
+}
+
+/* header */
+
+header {
+  width: 100%;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 3vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.header__download {
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3vh 3vw;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+header h1 a {
+  font: bold 90px/1 "Lobster";
+  color: #ffe46b;
+  text-shadow: 2px 10px 5px gray;
+  letter-spacing: 3px;
+}
+
+header .gnb {
+  display: flex;
+}
+
+header .gnb li {
+  margin: 0px 20px;
+}
+
+header .gnb li a {
+  font: 2vw/1 "Do Hyeon";
+  color: #000;
+  letter-spacing: 1px;
+  margin: 0vh 2vw;
+}
+
+header .gnb2 li a {
+  font: 2vw/1 "Do Hyeon";
+  color: #fff;
+  letter-spacing: 1px;
+  margin: 0vh 2vw;
+}
+
+header .gnb li a:hover {
+  color: #228af4;
+}
+
+header .sns {
+  display: flex;
+}
+
+header .sns li {
+  margin: 0px 1vh;
+}
+
+header .sns li a {
+  font-size: 3vh;
+  margin-right: 1vh;
+  color: #000;
+}
+
+header .sns2 li a {
+  font-size: 3vh;
+  margin-right: 1vh;
+  color: #fff;
+}
+
+header .sns li a:hover {
+  color: #228af4;
+}
+
+header .btnMenu {
+  font-size: 24px;
+  color: #000;
+  display: none;
+}
+
+header .btnMenu2 {
+  font-size: 24px;
+  color: #fff;
+  display: none;
+}
+
+.chat__main {
+  margin: 200px 0px 0px 50px;
+  font: 50px/1 "Do Hyeon";
+  color: #fff;
+}
+
+.chat {
+  margin: 0px 0px 0px 50px;
+  font: 50px/1 "Do Hyeon";
+  color: #fff;
+}
+
+.chat2 {
+  margin: 0px 0px 0px 50px;
+  font: 50px/1 "Do Hyeon";
+  color: #fff;
+}
+
+.chat__br {
+  margin-top: 18px;
+  width: 94vw;
+  height: 7px;
+  background: #fff;
+}
+
+.chat__sqaure {
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  background: #a5dcff;
+  border-radius: 30px;
+}
+
+.chat__sqaure__imo {
+  color: #4e8eb6;
+}
+
+.chat__group {
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.chat__letters {
+  margin-left: 20px;
+}
+
+.chat__letters__second {
+  font: 30px/1 "Do Hyeon";
+  margin-top: 20px;
+}
+
+figure {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.figure2 {
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img__computer img {
+  width: 35vw;
+  height: 65vh;
+}
+
+.main__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+figure .txt {
+  position: absolute;
+  left: 6vw;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+figure .txt p {
+  font: normal 8vw/1 "Fredericka the Great";
+  color: #228af4;
+}
+
+figure .txt__first {
+  font: 6vw/1 "Do Hyeon";
+}
+
+figure .txt__second {
+  font: 2vw/1 "Do Hyeon";
+}
+
+figure pre {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+figure .txt__focus {
+  color: #ffe46b;
+}
+
+figure .down {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 7vh;
+  background: #ffe46b;
+  border-radius: 100px;
+}
+
+figure .down2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 18vw;
+  height: 12vh;
+  background: #228af4;
+  color: #fff;
+  border-radius: 100px;
+}
+
+figure .downtxt {
+  font: 1.3vw/1 "Do Hyeon";
+  color: #333;
+}
+
+figure .downtxt2 {
+  font: 7vh/1 "Do Hyeon";
+  font-weight: 900;
+  color: #fff;
+}
+
+/* footer */
+
+.footer__main {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  font: 1.2vw/1 "arial";
+  color: #ddd;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5vh 5vw;
+  z-index: 2;
+}
+
+.footer__chat {
+  width: 100%;
+  bottom: 0px;
+  left: 0px;
+  font: 1.2vw/1 "arial";
+  color: #ddd;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5vh 5vw;
+  z-index: 2;
+}
+
+/* mobile phone */
+
+@media screen and (max-width: 1073px) {
+  header .gnb {
+    display: none;
+  }
+  header .sns {
+    display: none;
+  }
+  header .btnMenu {
+    display: block;
+  }
+}
+
+@keyframes change {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
