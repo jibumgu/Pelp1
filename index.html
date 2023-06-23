@@ -12,7 +12,7 @@
   <header>
     <h1><a href="./index.html">Pelp</a></h1>
     <ul class="gnb">
-      <li><a href="./download.html">다운로드</a></li>
+      <li><a href="./sing.html">노래 추천</a></li>
       <li><a href="./chat.html">채팅방</a></li>
       <li><a href="./gallery.html">갤러리</a></li>
       <li><a href="./signin.html">로그인</a></li>
@@ -33,7 +33,7 @@
   <div class="fullscreen" id="fullscreen">
     <nav class="fullscreen-menu">
       <ul>
-        <li><a href="./download.html">다운로드</a></li>
+        <li><a href="./sing.html">노래 추천</a></li>
         <li><a href="./chat.html">채팅방</a></li>
         <li><a href="./gallery.html">갤러리</a></li>
         <li><a href="./signin.html">로그인</a></li>
@@ -44,7 +44,7 @@
   </div>
 
   <figure>
-    <img src="./img/mainbg.jpg" class="main__img">
+    <!-- <img src="./img/mainbg3.jpg" class="main__img"> -->
 
     <article class="txt">
       <p><span class="txt__focus">Pe</span>t<br />He<span class="txt__focus">lp</span></p>
@@ -55,8 +55,10 @@
       </a>
     </article>
   </figure>
-
   <footer class="footer__main">2023 Pelp &copy; ALL RIGHTS RESERVED.</footer>
+  <div class="butterfly">
+    <img src="./img/butterfly.gif" alt="나비" />
+  </div>
   <script>
     var fullScreenBox = document.getElementById("fullscreen");
     var fullScreen = document.getElementById("toggle");
@@ -69,6 +71,8 @@
       fullScreenBox.style.display = "none";
     }
   </script>
+  <script src="./js/butterfly.js"></script>
   <script src="./js/sirup.js"></script>
+  <script src="./js/background.js"></script>
 </body>
 </html>

@@ -22,6 +22,32 @@ a {
 
 /* main CSS */
 
+.bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+.butterfly {
+  width: 60px;
+  height: 60px;
+  /* background-color: black; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+
+.butterfly img {
+  width: 100px;
+  z-index: 100;
+}
+
 /* progressbar */
 
 .progressWrap {
@@ -152,6 +178,7 @@ nav ul li a {
   width: 100vw;
   height: 100vh;
   animation: change 0.5s;
+  overflow: hidden;
 }
 
 .bg2 {
@@ -166,7 +193,7 @@ nav ul li a {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  background: #0d344d;
+  background: #2ea97a;
   animation: change 0.5s;
 }
 
@@ -329,6 +356,10 @@ header .btnMenu2 {
   margin-left: 20px;
 }
 
+.chat__letters__first {
+  color: #ffe46b;
+}
+
 .chat__letters__second {
   font: 30px/1 "Do Hyeon";
   margin-top: 20px;
@@ -400,6 +431,10 @@ figure .down {
   height: 7vh;
   background: #ffe46b;
   border-radius: 100px;
+}
+
+.down:hover {
+  background: #228af4;
 }
 
 figure .down2 {

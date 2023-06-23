@@ -16,7 +16,9 @@ const loop = () => {
   targetX += (x - targetX) * speed;
   targetY += (y - targetY) * speed;
 
-  content.style.transform = `translate3d(${targetX / 35}px, ${targetY / 35}px, ${0}px)`;
+  content.style.transform = `translate3d(${targetX / 35}px, ${
+    targetY / 35
+  }px, ${0}px)`;
   window.requestAnimationFrame(loop);
 };
 loop();

@@ -95,3 +95,15 @@ label a {
   text-decoration: none;
   color: #fff;
 }
+.butterfly {
+  width: 60px;
+  height: 60px;
+  /* background-color: black; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.butterfly img {
+  width: 100px;
+}
